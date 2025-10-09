@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Chen Liu</title>
+    <meta name="description" lang="en" content="This is an academic website for Will Hua">
+    <meta name="keywords" lang="en" content="Chen Liu" />
+
+
+    <link rel="shortcut icon" href="images/J.jpeg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      function ShowHide(divId, linkDivId) {
+          if(document.getElementById(divId).style.display == 'none') {
+              document.getElementById(divId).style.display='block';
+              document.getElementById(linkDivId).style.display='none'; // Hide the "read more" link
+          }
+          else {
+              document.getElementById(divId).style.display = 'none';
+          }
+      }
+    </script>
+
+    <style>
+      /* 为所有列表项设置样式 */
+      li.indented {
+          position: relative;
+          padding-left: 90px; /* 这是对齐效果的关键，可以根据实际内容调整这个值 */
+      }
+
+      li.indented::before {
+          content: attr(data-date);
+          position: absolute;
+          left: 0;
+          top: 0;
+          white-space: nowrap;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <header class="site-header">
+
+      <div class="wrapper">
+        <nav class="site-nav">
+          <a href="#" class="menu-icon">
+            <svg viewBox="0 0 18 15">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </a>
+
+          <div class="trigger">
+            <a class="page-link" href="#bio"><b>Biography</b></a>
+            <a class="page-link" href="#timeline"><b>Experiences</b></a>
+            <a class="page-link" href="#publications"><b>Publications</b></a>
+            <a class="page-link" href="#codebase"><b>GitHub</b></a>
+            <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="profile-cover" class="cover shallow-bg img-responsive">
+      <div id="profile-namecard" class="profile-wrapper wrapper-light">
+        <div id="my-pic" class="profile-col profile-col-1">
+          <img id="profile-avatar" src="images/myself.jpg" alt="Me" class="circle-img border-dark"-/>
+        </div>
+        <div id="my-contact" class="profile-col profile-col-2">
+          <div id="my-name" class="text-grey-dark">
+            Chen Liu<br>
+          </div>
+          <div id="my-title" class="text-grey">
+            Huazhong University of Science and Technology
+          </div>
+          <div id="my-email" class="text-grey-light">
+            luanyun2836 [at] hust.edu.cn
+          </div>
+        </div>
+        <div class="social-media">
+          <a href="#" target="_blank" class="icon-button linkedin">
+          <i class="ai ai-google-scholar-square icon-linkedin"></i>
+            <span></span>
+          </a>
+
+          <a href="#" target="_blank" class="icon-button github">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="#" target="_blank" class="icon-button linkedin">
+            <i class="fa fa-linkedin icon-linkedin"></i>
+            <span></span>
+          </a>
+
+          <a href="assets/Resume.pdf" target="_blank" class="icon-button github">
+            <i class="ai ai-cv icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="mailto:luanyun2836@hust.edu.cn" target="_blank" class="icon-button linkedin">
+            <i class="fa fa-envelope icon-linkedin"></i>
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div id="bio" class="bio">
+
+          <h1 class="md-heading text-left">
+            <i class="fa fa-id-card" aria-hidden="true"></i>
+            About
+          </h1>
+          <div class="bio-body" style="overflow:hidden;">
+            <p>
+              I received my <strong>Bachelor’s degree in Software Engineering</strong> from
+              <a href="https://www.whut.edu.cn/" target="_blank" style="color: #0073e6; text-decoration: none;">Wuhan University of Technology</a>
+              and was <strong>recommended for admission</strong> to pursue a
+              <strong>Master’s degree</strong> at the
+              <a href="https://cs.hust.edu.cn/" target="_blank" style="color: #0073e6; text-decoration: none;">School of Computer Science and Technology</a>
+              of
+              <a href="https://www.hust.edu.cn/" target="_blank" style="color: #0073e6; text-decoration: none;">Huazhong University of Science and Technology (HUST)</a>.
+              I am currently a <strong>Master’s student</strong> supervised by
+              <a href="https://www.ruizhang.info/" target="_blank" style="color: #0073e6; text-decoration: none;">
+                Prof. Zhang Rui
+              </a>
+              and
+              <a href="https://ethanmock.github.io/yixinsu.github.io/" target="_blank" style="color: #0073e6; text-decoration: none;">
+                Prof. Yixin Su
+              </a>
+              from the
+              <a href="https://intrebid.cs.hust.edu.cn/" target="_blank" style="color: #0073e6; text-decoration: none;">
+                INTREBID Lab
+              </a>.
+              My current research interests lie in
+              <em><strong>Multimodal Large Language Models (MLLMs)</strong></em> and
+              <em><strong>Retrieval-Augmented Generation (RAG)</strong></em>,
+              with a focus on <strong>extending these technologies to broader real-world applications</strong>.
+              Beyond research, I enjoy playing <strong>table tennis</strong>, <strong>badminton</strong>, and exploring
+              <strong>movies</strong> and <strong>music</strong> in my free time.
+            <br/>
+              If you are interested in my work or our lab’s research, feel free to reach out via
+              <a href="mailto:luanyun2836@hust.edu.cn" style="color: #0073e6; text-decoration: none;"><strong>luanyun2836 [at] hust.edu.cn</strong></a>.
+            </p>
+
+            <!--Interests-->
+            <div style="width: 50%; float:left">
+              <h3><i class="fa fa-star" aria-hidden="true"></i>
+                <strong>Interests</strong>
+              </h3>
+
+              <ul>
+                <li><b>Multimodal Retrieval-Augmented Generation</b></li>
+                <li><b>Large Language Model</b></li>
+                <li><b>Scalable Vector Graphic Generation</b></li>
+                <!--        <a href="https://arxiv.org/pdf/2506.21539" target="_blank">[WorldVLA]</a><a href="https://arxiv.org/pdf/2503.03464" target="_blank">[Survey]</a><a href="https://arxiv.org/abs/2402.10534" target="_blank">[VLP]</a><a href="https://ieeexplore.ieee.org/abstract/document/9681231" target="_blank">[VPN]</a>-->
+              </ul>
+            </div>
+
+            <!--Education-->
+            <div style="width: 50%; float:right">
+              <h3>
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                  <strong>Education</strong>
+              </h3>
+
+              <b>Huazhong University of Science and Technology</b><br>
+                <ul>
+                  <li>M.Eng. in Computing Technology;</li>
+                  <li>Sep. 2024 - now </li>
+                  <li>Mentor: <a href="https://www.ruizhang.info" target="_blank">Prof. Rui Zhang</a> and <a href="https://ethanmock.github.io/yixinsu.github.io/" target="_blank" style="color: #0073e6; text-decoration: none;">
+                Prof. Yixin Su
+              </a></li>
+                </ul>
+
+              <b>Wuhan University of Technology</b><br>
+              <ul>
+                <li>B.Eng. in Soft Engineering; </li>
+                <li>Sep. 2020 - June. 2024</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Experiences  -->
+        <div id="timeline" class="timeline-brief">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            Experiences
+          </h1>
+
+          <div class="timeline-body">
+
+            <div class="timeline-item">
+              <div class="timeline-date">
+                <img class="social-icon" src="assets/hust%20logo.svg" alt="hust logo"/>
+                Sept 2024 - now
+              </div>
+              <div class="timeline-title">
+                Master Student @ <a href="https://cs.hust.edu.cn/" target="_blank">HUST (Wuhan)</a>
+              </div>
+              <div class="timeline-desc">
+                <div class="timeline-host">
+                  Mentor: <a href="https://www.ruizhang.info" target="_blank">Prof. Rui Zhang</a> and <a href="https://ethanmock.github.io/yixinsu.github.io/" target="_blank" style="color: #0073e6; text-decoration: none;">Prof. Yixin Su</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">
+                <img class="social-icon" src="assets/whut%20logo.svg" alt="whut logo"/>
+                Sept 2020 - June 2024
+              </div>
+              <div class="timeline-title">
+                Bachelor Student @ <a href="https://www.cuhk.edu.cn/en" target="_blank">WHUT (Wuhan)</a>
+              </div>
+            </div>
+
+          <br>
+          </div>
+        </div>
+
+        <!--Publications-->
+        <div id="publications" class="publications">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-file" aria-hidden="true"></i>
+            Publications (<button class="custom-button" id="show-selected-btn"> Show Representative </button> / <button class="custom-button" id="show-all-btn"> Show All </button>)
+          </h1>
+
+          <div class="pub-list">
+
+            <div class="pub" data-selected="true">
+              <div class="pub-left">
+                <img class="intro-img frame" src="images/worldvla.png" alt="worldvla">
+              </div>
+              <div class="pub-right">
+                <div class="title">
+                  WorldVLA: Towards Autoregressive Action World Model
+                </div>
+                <div class="authors">
+                  <span style="font-size: 11pt;">
+                    <b>Chen Liu</b>, Rui Zhang, Yixin Su
+                  </span>
+                </div>
+                <div class="publish">
+                  <span class="place">Arxiv 2025</span>
+                  <span class="place"></span>
+                </div>
+                <div class="tags">
+                  [<a class="tag" href="https://arxiv.org/pdf/2506.21539" target="_blank">Paper</a>]
+                  [<a class="tag" href="https://github.com/alibaba-damo-academy/WorldVLA" target="_blank">Code</a>]
+                </div>
+              </div>
+            </div>
+
+            <div class="pub">
+              <div class="pub-left">
+                <img class="intro-img frame" src="images/cvpr24-mp.png" alt="cvpr24">
+              </div>
+              <div class="pub-right">
+                <div class="title">
+                  Self-Supervised Class-Agnostic Motion Prediction with Spatial and Temporal Consistency Regularizations
+                </div>
+                <div class="authors">
+                  <span style="font-size: 11pt;">
+                    <b>Chen Liu</b>, Rui Zhang, Yixin Su
+                  </span>
+                </div>
+                <div class="publish">
+                  <span class="place">CVPR 2024</span>
+                  <span class="place"></span>
+                </div>
+                <div class="tags">
+                  [<a class="tag" href="https://arxiv.org/abs/2403.13261" target="_blank">Paper</a>]
+                  [<a class="tag" href="https://github.com/kwwcv/SelfMotion" target="_blank">Code</a>]
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript to handle button clicks -->
+    <script>
+      // Get the buttons and publications
+      const showSelectedBtn = document.getElementById('show-selected-btn');
+      const showAllBtn = document.getElementById('show-all-btn');
+      const publications = document.querySelectorAll('.pub');
+
+      // Add event listener to 'Show Selected Publication' button
+      showSelectedBtn.addEventListener('click', function() {
+        publications.forEach(pub => {
+          if (pub.getAttribute('data-selected') === 'true') {
+            pub.style.display = 'block';  // Show selected publication
+          } else {
+            pub.style.display = 'none';  // Hide other publications
+          }
+        });
+      });
+
+      // Add event listener to 'Show All' button
+      showAllBtn.addEventListener('click', function() {
+        publications.forEach(pub => {
+          pub.style.display = 'block';  // Show all publications
+        });
+      });
+    </script>
+
+    <script>
+      const repos = [
+        { owner: "alibaba-damo-academy", repo: "WorldVLA", starId: "star-count", forkId: "fork-count" },
+        { owner: "GAI4Manipulation", repo: "AwesomeGAIManipulation", starId: "star-count-2", forkId: "fork-count-2" },
+        { owner: "Jun-CEN", repo: "CMDFusion", starId: "star-count-3", forkId: "fork-count-3" },
+        { owner: "Jun-CEN", repo: "SegmentAnyRGBD", starId: "star-count-4", forkId: "fork-count-4" },
+        { owner: "Jun-CEN", repo: "PSL", starId: "star-count-5", forkId: "fork-count-5" },
+        { owner: "Jun-CEN", repo: "Unified-Open-Set-Recognition", starId: "star-count-6", forkId: "fork-count-6" },
+        { owner: "Jun-CEN", repo: "Open-world-3D-semantic-segmentation", starId: "star-count-7", forkId: "fork-count-7" },
+        { owner: "Jun-CEN", repo: "Open-World-Semantic-Segmentation", starId: "star-count-8", forkId: "fork-count-8" },
+        { owner: "Jingkang50", repo: "PSG4D", starId: "star-count-9", forkId: "fork-count-9" },
+        { owner: "youquanl", repo: "Segment-Any-Point-Cloud", starId: "star-count-10", forkId: "fork-count-10" }
+      ];
+
+      async function loadGitHubStats() {
+        for (const { owner, repo, starId, forkId } of repos) {
+          try {
+            const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
+            if (!res.ok) throw new Error("GitHub API error");
+            const data = await res.json();
+            document.getElementById(starId).innerText = data.stargazers_count ?? "–";
+            document.getElementById(forkId).innerText = data.forks_count ?? "–";
+          } catch (e) {
+            console.error(`Failed to load stats for ${owner}/${repo}`, e);
+            document.getElementById(starId).innerText = "–";
+            document.getElementById(forkId).innerText = "–";
+          }
+        }
+      }
+
+      loadGitHubStats();
+    </script>
+
+    <!--GitHub-->
+    <div class="wrapper">
+      <div id="codebase" class="bio">
+        <div class="bio-body" style="overflow:hidden;">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            GitHub
+          </h1>
+          <div class="card-container">
+
+            <div class="github-card">
+              <div>
+                <a class="repo-link" href="https://github.com/alibaba-damo-academy/WorldVLA" target="_blank">
+                  alibaba-damo-academy/<strong>WorldVLA</strong>
+                </a>
+                <span class="label">Project</span>
+              </div>
+              <div class="description">
+                WorldVLA: Towards Autoregressive Action World Model.
+              </div>
+              <div class="meta">
+                <div class="dot"></div>
+                <div>Python</div>
+                <a href="https://github.com/alibaba-damo-academy/WorldVLA/stargazers" target="_blank">
+                  <svg fill="currentColor" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9
+                    14.5L369.8 316.2 115.9 353.1c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7
+                    179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1
+                    119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5
+                    26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9
+                    8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
+                  </svg>
+                  Star &nbsp;  <span id="star-count">–</span>
+                </a>
+                <a href="https://github.com/alibaba-damo-academy/WorldVLA/network/members" target="_blank">
+                  <svg fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 4a2 2 0 1 0-2.47 1.94V7a.48.48 0 0 1-.27.44L8.49
+                    8.88l-2.76-1.4A.49.49 0 0 1 5.46 7V5.94a2 2 0 1 0-1
+                    0V7a1.51 1.51 0 0 0 .82 1.34L8
+                    9.74v1.32a2 2 0 1 0 1 0V9.74l2.7-1.36A1.49
+                    1.49 0 0 0 12.52 7V5.92A2 2 0 0 0 14
+                    4zM4 4a1 1 0 1 1 2 0 1 1 0 0 1-2
+                    0zm5.47 9a1 1 0 1 1-2 0 1 1 0 0
+                    1 2 0zM12 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z">
+                    </path>
+                  </svg>
+                  Fork &nbsp; <span id="fork-count">–</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="github-card">
+              <div>
+                <a class="repo-link" href="https://github.com/GAI4Manipulation/AwesomeGAIManipulation" target="_blank">
+                  GAI4Manipulation/<strong>AwesomeGAIManipulation</strong>
+                </a>
+                <span class="label">Awesome List</span>
+              </div>
+              <div class="description">
+                Generative Artificial Intelligence in Robotic Manipulation: A Survey.
+              </div>
+              <div class="meta">
+                <div class="dot"></div>
+                <div>Markdown</div>
+                <a href="https://github.com/GAI4Manipulation/AwesomeGAIManipulation/stargazers" target="_blank">
+                  <svg fill="currentColor" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9
+                    14.5L369.8 316.2 115.9 353.1c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7
+                    179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1
+                    119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5
+                    26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9
+                    8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
+                  </svg>
+                  Star &nbsp;<span id="star-count-2">–</span>
+                </a>
+                <a href="https://github.com/GAI4Manipulation/AwesomeGAIManipulation/network/members" target="_blank">
+                  <svg fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 4a2 2 0 1 0-2.47 1.94V7a.48.48 0 0 1-.27.44L8.49
+                    8.88l-2.76-1.4A.49.49 0 0 1 5.46 7V5.94a2 2 0 1 0-1
+                    0V7a1.51 1.51 0 0 0 .82 1.34L8
+                    9.74v1.32a2 2 0 1 0 1 0V9.74l2.7-1.36A1.49
+                    1.49 0 0 0 12.52 7V5.92A2 2 0 0 0 14
+                    4zM4 4a1 1 0 1 1 2 0 1 1 0 0 1-2
+                    0zm5.47 9a1 1 0 1 1-2 0 1 1 0 0
+                    1 2 0zM12 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z">
+                    </path>
+                  </svg>
+                  Fork &nbsp;<span id="fork-count-2">–</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Selected Honors & Awards-->
+    <div class="wrapper">
+      <div id="awards" class="bio">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-tasks" aria-hidden="true"></i>
+          Selected Honors & Awards
+        </h1>
+        <ul>
+          <li> First-Class Academic Scholarship of the University, HUST, 2025.</li>
+          <li> First-Class Academic Scholarship of the University, HUST, 2024-2025.</li>
+          <li> First-Class Academic Scholarship of the University, WHUT, 2021-2022.</li>
+          <li> National Scholarship, WHUT, 2020-2021.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <div style="max-width: 400px; width: 100%;">
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=K9NLvpbM7GH1cTCvhvVlo4LW5p-d2mRZYw6UhrAFw0g&cl=ffffff&w=a"></script>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="footer-col-wrapper">
+          <div class="footer-col  footer-col-1">
+            <ul class="contact-list">
+              <li>Personal Email:</li>
+              <li><a href="mailto:">luanyun2836 [at] hust.edu.cn</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col  footer-col-2">
+              <a href="https://scholar.google.com/citations?user=7SKAhBwAAAAJ&hl=en" target="_blank" class="icon-button github">
+              <i class="ai ai-google-scholar-square icon-github"></i>
+                <span></span>
+              </a>
+
+              <a href="https://github.com/Jun-CEN" target="_blank" class="icon-button github">
+                <i class="fa fa-github icon-github"></i>
+                <span></span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/jun-cen-45b995219/" target="_blank" class="icon-button linkedin">
+                <i class="fa fa-linkedin icon-linkedin"></i>
+                <span></span>
+              </a>
+
+              <a href="work/Resume_Jun_CEN.pdf" target="_blank" class="icon-button github">
+                <i class="ai ai-cv icon-github"></i>
+                <span></span>
+              </a>
+          </div>
+        <div class="footer-col footer-col-3">
+            <!--<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwillhua127.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
+        <!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?user=Lxe71v4AAAAJ&hl=en&url=https%3A%2F%2Fscholar.google.com%2Fcitations&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
+            <p class="text">Last updated: Oct, 2025.<br>The style of this website is borrowed from <a href='https://leoyuan.site/' target="_blank">Zeqing Yuan's</a>.</p>
+        </div>
+      </div>
+      </div>
+
+    </footer>
+
+    <div class="back-to-top">Top</div>
+
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+        var offset = 220;
+        var duration = 500;
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.back-to-top').fadeIn(duration);
+            } else {
+                jQuery('.back-to-top').fadeOut(duration);
+
+            }
+        });
+        jQuery('.back-to-top').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+        })
+    });
+    </script>
+  </body>
+
+</html>
